@@ -1,0 +1,42 @@
+@media (max-width:1170px) {
+    .logo {
+        width: 90%;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:991px) {
+
+}
+
+@media (max-width:767px) {
+    /*For Navbar*/
+    .logo {
+        width: 80%;
+        margin-left: 80px;
+    }
+    /*For Footer*/
+    .footer-text h3 {
+        text-align: center;
+    }
+    .footer-text ul {
+        text-align: center;
+    }
+    .footer-address ul {
+        text-align: center;
+    }
+    .footer-logo-address {
+        text-align: center;
+    }
+    /*Teacher Section*/
+    .teacher .information {
+        text-align: center;
+    }
+}
+
+@media (max-width:590px) {
+    .logo {
+        width: 50%;
+        margin-left: 80px;
+    }
+}

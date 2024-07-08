@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+body,
+html {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+    color: #333;
+}
+
+p {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    color: #3f3f3f;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #002147;
+    border-radius: 7px;
+}
+
+
+/*--------------------------------------------------------------------------Navbar--------------------------------------------------------------------------*/
+
+.navbar-nav {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.navbar-nav a:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.nav-link {
+    color: white;
+    margin-left: 6px;
+}
+
+.nav-link i {
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+.nav1 .navbar-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/*Part2 Navbar*/
+
+.navbar-brand {
+    margin-left: -90px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*--------------------------------------------------------------------------Top Button--------------------------------------------------------------------------*/
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #002147;
+}
+
+
+#scrollToTopBtn i {
+    display: block;
+}
+
+
+/*----------------------------------------------------------------------News & Linkages----------------------------------------------------------------------*/
+.section {
+    margin-left: 100px;
+}
+
+.news-item {
+    display: flex;
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.date {
+    border: 2px solid #002147;
+    color: #002147;
+    padding: 10px;
+    text-align: center;
+    min-width: 80px;
+}
+
+.news-item:hover {
+    background-color: #002147;
+
+    .date {
+        color: rgb(255, 255, 255);
+    }
+}
+
+.content:hover {
+    transform: scale(0.95);
+}
+
+.content h3 {
+    margin-top: 0;
+    color: #002147;
+    transition: 0.3s ease-in-out;
+}
+
+.content p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+.news-item .date {
+    order: 1;
+}
+
+.news-item .content {
+    order: 2;
+}
+
+.carousel-content {
+    position: relative;
+}
+
+.carousel-caption {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(56, 56, 56, 0.726);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/*----------------------------------------------------------------------Faculties & Institutes----------------------------------------------------------------------*/
+
+.custom-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #002147;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.custom-btn:hover {
+    background-color: #001d3ddd;
+    cursor: pointer;
+}
+
+.faculty img {
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+.faculty img:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/*----------------------------------------------------------------------AU Academics----------------------------------------------------------------------*/
+
+.academics .news-img {
+    position: relative;
+    overflow: hidden;
+    max-height: 325px;
+}
+
+.academics .news-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.academics .img-text {
+    padding: 20px;
+}
+
+.academics .img-text h3 a {
+    color: #444444;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.academics .img-text h3 a:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.academics .news-are {
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.academics .news-are:hover {
+    border-radius: 5px;
+    transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.academics .news-date {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #2d3e50;
+    color: #fff;
+    padding: 5px 10px;
+    font-family: Raleway, sans-serif;
+}
+
+.academics .button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 1px solid rgba(75, 75, 75, 0.307);
+    color: #2d3e50;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.academics .button:hover {
+    background-color: #002147;
+    color: white;
+}
+
+/*----------------------------------------------------------------------AU ONLINE SYSTEMS----------------------------------------------------------------------*/
+
+.col-md-4 {
+    margin-bottom: 15px;
+}
+
+.icon-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.title a {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2A2C39;
+    transition: 0.3s ease-in-out;
+}
+
+.title a:hover {
+    color: rgba(234, 152, 0, 0.851);
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+}
+
+.icon-box:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+/*----------------------------------------------------------------------AU ONLINE SYSTEMS----------------------------------------------------------------------*/
+
+.icon-box-nonv1 {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    transition: 0.3s ease-in-out;
+}
+
+.icon-box-nonv1:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.icon-box-nonv1 img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.affiliated a {
+    color: #2A2C39;
+    transition: 0.3s ease-in-out;
+}
+
+.affiliated a:hover {
+    color: rgba(255, 166, 0, 0.784);
+}
+
+/*----------------------------------------------------------------------AU Best Teacher----------------------------------------------------------------------*/
+.teacher .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teacher .haed {
+    flex: .5;
+}
+
+.teacher .carousel {
+    flex: 1;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 70px;
+}
+
+.information p {
+    color: #666;
+    font-weight: 500;
+}
+
+.teacher .carousel-item.active {
+    display: flex;
+}
+
+.teacher .information {
+    margin-bottom: 20px;
+}
+
+.teacher .teacher-name {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+
+/*----------------------------------------------------------------------AU Events----------------------------------------------------------------------*/
+.event img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 30px
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ct-blog-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.news-are {
+    transition: 0.3s ease-in-out;
+}
+
+.news-are:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*----------------------------------------------------------------------AU FOOTER----------------------------------------------------------------------*/
+
+.footer-area {
+    background: url('..//images/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.footer-area a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-area a:hover {
+    color: rgba(255, 166, 0, 0.784);
+}
+
+.footer-top {
+    border-bottom: 4px double #fff;
+    padding: 20px 0;
+}
+
+.footer-logo-address {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10rem;
+    font-weight: 500;
+}
+
+.footer-logo img {
+    max-width: 300px;
+}
+
+.footer-address ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+}
+
+.footer-address ul li {
+    display: inline-block;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.footer-address ul li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.footer-address ul li a i {
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+.footer-text {
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+.footer-text h3 {
+    letter-spacing: 3px;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.footer-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+}
+
+.footer-text ul li {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.footer-bottom {
+    background-color: #002147;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+.footer-bottom-text {
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer-bottom-text a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-bottom-text a:hover {
+    color: rgba(255, 166, 0, 0.784);
+}
+
+
+/*----------------------------------------------------------------------AU SOCIALS----------------------------------------------------------------------*/
+.social-container {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.social-icon {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:last-child {
+    border-bottom: none;
+}
+
+.social-icon:hover {
+    background-color: #002147;
+    color: #fff;
+}
+
+.social-icon i {
+    font-size: 1.5em;
+}
+
+
+.social-icon .fa-facebook-f { color: #3b5998; }
+.social-icon .fa-twitter { color: #00acee; }
+.social-icon .fa-instagram { color: #e4405f; }
+.social-icon .fa-linkedin-in { color: #0077b5; }
